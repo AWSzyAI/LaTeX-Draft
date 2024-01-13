@@ -1,0 +1,192 @@
+\documentclass[lang=cn,newtx,10pt,color=green,scheme=chinese]{elegantbook}
+
+\title{时子延手稿}
+\subtitle{Everything in \LaTeX{}}
+\author{时子延}
+\institute{认知与意识智能学习研究中心}
+\date{\today}
+% \version{0.01}
+% \bioinfo{我的Blog}{\href{https//www.pm61.fun}{时子延的Blog}}
+\bioinfo{我的Github}{\href{https://github.com/AWSzyAI}{时子延的Github}}
+\extrainfo{不要因为一时的迷失而放弃目标，不要因为一时的困惑而选择堕落。}
+\setcounter{tocdepth}{2} % 只显示二级目录
+\logo{szy-logo.JPG}
+\cover{cover.png}
+
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+
+% 修改标题页的橙色带
+\definecolor{customcolor}{RGB}{00,64,00}
+\colorlet{coverlinecolor}{customcolor}
+\usepackage{cprotect}
+
+\addbibresource[location=local]{reference.bib} % 参考文献，不要删除
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{我是谁？}
+
+
+\chapter{我想做的事情}
+
+\begin{itemize}
+    \item 学习EmeletBook模板撰写我的《时子延手稿》//TODO
+    \item 举办2024跨年演讲
+\end{itemize}
+
+
+\chapter{本科篇：南京师范大学 人工智能}
+\section{认知塑造}
+
+
+
+\section{能力培养}
+\section{打造自己的环境}
+\section{经历体验}
+\subsection{从零到一解决问题的能力}
+\subsubsection{搭建一个Blog网站}
+\section{积累资源}
+
+\section{读书}
+\section{笔记}
+我现在用以下几种方式记笔记
+\begin{itemize}
+    \item \textcolor{red}{Obsidian}:全终端使用Obsidian做MarkDown笔记，用Call Out进行可折叠排版，部分内容作为时子延.io发布到Github.io上
+    \item \textcolor{red}{PPT}:电脑，iPad端使用PPT记笔记
+    \item \textcolor{red}{\LaTeX{}}:Mac，Windows使用\LaTeX{}记 《时子延手稿》
+    \item \textcolor{red}{html}:把笔记在Obsidian中记录为html并发布到pm61.fun
+    \item \textcolor{red}{Adobe illustrator}:使用Adobe illustrator制作思维导图
+    \item \textcolor{red}{gitbook}:使用gitbook.io写书
+    \item \textcolor{red}{Notion}:使用Notion做知识管理
+\end{itemize}
+\section{刷课}
+\section{Blog}
+\section{写作}
+
+
+\section{我的ChatGPT使用报告}
+\section{Github}
+\section{English}
+\section{Research \& Papers}
+
+\section{项目项目经历}
+\begin{itemize}
+    \item 算法:蓝桥杯程序设计大赛
+    \item 大创:手机全语音控制
+    \item 小挑:南京聚视科技有限公司
+    \item 大创:面向中小学科学教育大模型的领域知识增强方法研究与实现
+    \item 网安:蓝桥杯CTF
+\end{itemize}
+\section{实习项目经历}
+
+\chapter{技术栈}
+
+\section{\LaTeX{}}
+\subsection{ElementBook模板}
+\TeX{} Live, tlshell 
+CTeX
+
+基于elementbook模板定制我的\LaTeX{}书籍：
+\begin{lstlisting}{language=TeX}
+\documentclass[cn]{elegantbook} 
+\documentclass[lang=cn]{elegantbook}
+\documentclass[device=pad]{elegantbook} %iPad模式，切边，放大
+\end{lstlisting}
+
+模板主题颜色
+\begin{lstlisting}{language=TeX}
+\documentclass[color=green]{elegantbook}
+\end{lstlisting}
+\begin{table}[htbp]
+    \caption{ElegantBook 模板中的颜色主题\label{tab:color thm}}
+    \centering
+    \begin{tabular}{ccccccc}
+    \toprule
+      & \textcolor{structure1}{green} 
+      & \textcolor{structure2}{cyan} 
+      & \textcolor{structure3}{blue}
+      & \textcolor{structure4}{gray} 
+      & \textcolor{structure5}{black} 
+      & 主要使用的环境\\
+    \midrule
+      structure & \ccr{structure1}
+      & \ccr{structure2}
+      & \ccr{structure3} 
+      & \ccr{structure4} 
+      & \ccr{structure5} 
+      & chapter \ section \ subsection \\
+      main      & \ccr{main1}
+      & \ccr{main2}
+      & \ccr{main3}
+      & \ccr{main4}
+      & \ccr{main5}
+      & definition \ exercise \ problem \\
+      second    & \ccr{second1}
+      & \ccr{second2}
+      & \ccr{second3}
+      & \ccr{second4}
+      & \ccr{second5}
+      & theorem \ lemma \ corollary\\
+      third     & \ccr{third1}
+      & \ccr{third2}
+      & \ccr{third3}
+      & \ccr{third4}
+      & \ccr{third5}
+      & proposition\\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+How to DIY the color?
+\begin{lstlisting}[tabsize=4]
+    \definecolor{structurecolor}{RGB}{0,0,0}
+    \definecolor{main}{RGB}{70,70,70}    
+    \definecolor{second}{RGB}{115,45,2}    
+    \definecolor{third}{RGB}{0,80,80}
+    \end{lstlisting}
+
+    https://www.fotor.com/cn
+
+\subsection{数学建模模板}
+\subsection{IEEEn模板}
+\section{Linux - WSL}
+
+
+
+
+
+
+\chapter{研究生篇：南京大学 人工智能}
+
+\chapter{大事表：我在本科四年中做了什么？}
+\section{大一}
+\section{大二}
+
+
+\datechange{2024/01/12}{尝试} 
+\begin{change}
+    \item 使用\LaTeX{}模板 elementbook来撰写《时子延手稿》
+    \item 在WSL上安装texlive --all 来使用\LaTeX{}
+\end{change}
+
+
+
+\section{大三}
+\section{大四}
+
+\nocite{*} % 打印所有参考文献
+\printbibliography[heading=bibintoc, title=\ebibname]
+\appendix
+
+\chapter{数学}
+
+\end{document}
